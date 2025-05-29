@@ -7,11 +7,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Define color used */
+  --white: #ffffff;
+  --black: #000000;
+
+  --separator-gray-color: #D9D9E0
+
+  /* Tipos de letra */
+
+}
+
 boby,
 html {
   line-height: 1.5;
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 ul {
@@ -19,7 +30,7 @@ ul {
 }
 
 .main-nav {
-  background-color: black;
+  background-color: var(--black);
   padding: 0px 16px;
 }
 
@@ -29,7 +40,7 @@ ul {
   justify-content: flex-end;
 }
 .main-nav__item {
-  color: white;
+  color: var(--white);
 }
 
 .header {
@@ -69,7 +80,7 @@ ul {
 }
 
 .menu {
-  border: 1px solid red;
+  border-top: 1px solid #d9d9e0;
   display: flex;
   padding: 0px 16px;
   justify-content: space-between;
@@ -77,8 +88,12 @@ ul {
 .menu_item {
   width: 100%;
   height: 48px;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: system-ui;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
